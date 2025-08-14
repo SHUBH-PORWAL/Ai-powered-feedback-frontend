@@ -3,7 +3,7 @@ import toast from 'react-hot-toast'
 import { removeStoredToken } from '../utils/auth'
 
 const api = axios.create({
-  baseURL:  'https://ai-powered-feedback-backend-production.up.railway.app',
+  baseURL:  'https://ai-powered-feedback-backend-production.up.railway.app/api',
   timeout: 10000,
 })
 
@@ -37,3 +37,4 @@ api.interceptors.response.use(
 
 
 export default api
+
